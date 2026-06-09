@@ -2,17 +2,11 @@
 using namespace std;
 
 int main() {
-	int array[5]{ 1, 2, 3, 4, 6 };
-	int* ptr = array;
-
-	for (; ptr <= &array[4]; ptr++) {
-		cout << ptr << " - " << *ptr << endl;
-	}
-
-	cout << ptr - array << endl;
-
-	for (ptr--; ptr >= array; ptr--) {
-		cout << ptr << " - " << *ptr << endl;
+	const int SIZE = 5;
+	int array[SIZE]{ 1, 2, 3, 4, 5 };
+	
+	for (int i = 0; i < SIZE; i++) {
+		cout << (array + i) << " - " << *(array + i) << endl;
 	}
 
 
