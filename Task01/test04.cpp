@@ -1,14 +1,20 @@
-#include <iostream>
-using namespace std;
-
-int main() {
-	int array[3]{ 1, 2, 3 };
-
-	cout << array << " - " << *array << endl;
-	cout << &array[0] << " - " << array[0] << endl;
-	cout << &array[1] << " - " << array[1] << endl;
-	cout << &array[2] << " - " << array[2] << endl;
-
-
-	return 0;
-}
+//#include <iostream>
+//using namespace std;
+//
+//int main() {
+//	int array[5]{ 1, 2, 3, 4, 6};
+//	int* ptr = array;
+//
+//	for (; ptr <= &array[4]; ptr++) {
+//		cout << ptr << " - " << *ptr << endl;
+//	}
+//
+//	cout << ptr - array << endl;
+//
+//	for (ptr--; ptr >= array; ptr--) {
+//		cout << ptr << " - " << *ptr << endl;
+//	}
+//
+//
+//	return 0;
+//}
